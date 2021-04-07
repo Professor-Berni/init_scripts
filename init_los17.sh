@@ -25,8 +25,12 @@ cd frameworks/av
 cd ../..
 
 cd frameworks/base
-  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-17.1 && git cherry-pick e04a0e19fce70b248b16768c6207550cdb32f88e^..6a2af3942be568a63059ac51f5a97697652c9485
+  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-17.1 && git cherry-pick 5d727004f90d011c033023e78da10321a94165d1^..2d3b941d9a1e77cc226c75215a5598739f8843d9
 cd ../..
+
+cd packages/apps/Eleven
+  git fetch "https://github.com/LineageOS/android_packages_apps_Eleven" refs/changes/25/306325/4 && git cherry-pick FETCH_HEAD
+cd ../../..
 
 cd system/vold/
   git fetch "https://github.com/TALUAtGitHub/android_system_vold" lineage-17.1 && git cherry-pick 0a5a4c5805832c68e1e1f224db7f4bee0ac1f83d
