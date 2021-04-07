@@ -22,7 +22,7 @@ cd frameworks/av
 cd ../..
 
 cd frameworks/base
-  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 349a65f370e9c82ef4fe8188b09433db13ce9df1
+  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 38a0f8f9050f699bae2a2622c95bb239c2f93fdd
 cd ../..
 
 cd system/netd
