@@ -42,5 +42,5 @@ cd packages/modules/NetworkStack
 cd ../../..
 
 cd vendor/lineage
-  git fetch "https://github.com/TALUAtGitHub/android_vendor_lineage" lineage-18.1 && git cherry-pick 050c2b2d869aff926782996598fe106d61cc6e9c
+  git fetch "https://github.com/TALUAtGitHub/android_vendor_lineage" lineage-18.1 && git cherry-pick bde1cf6a69314fa0527b23a80e1f7a42b2ebcafc
 cd ../..
