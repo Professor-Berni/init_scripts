@@ -19,7 +19,3 @@ fi
 cd frameworks/base
   git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-17.1 && git cherry-pick 9b9e13d38b450404015067f5416f756229bf27d7^..2d10bd7a63fd7d27a93d98c030ffcc0ca07c9e04
 cd ../..
-
-cd packages/apps/Eleven
-  git fetch "https://github.com/LineageOS/android_packages_apps_Eleven" refs/changes/25/306325/4 && git cherry-pick FETCH_HEAD
-cd ../../..
