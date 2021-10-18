@@ -14,8 +14,12 @@ if [ -d vendor/fdroid ] ; then
 fi
 
 cd frameworks/base
-  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 031638cc3b365c260a9af3f756d552d938246c6f
+  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 089522f3ba956a3fd4147f6e08fb234a30911acb
 cd ../..
+
+cd hardware/lineage/interfaces
+	git fetch "https://github.com/LineageOS/android_hardware_lineage_interfaces" lineage-18.1 && git cherry-pick cfcb4c8a978a8627a5d6913089d9bb92d7356877
+cd ../../..
 
 cd packages/modules/NetworkStack
   git fetch "https://github.com/DerpFest-11/packages_modules_NetworkStack" 11 && git cherry-pick 22fd53a977eeaf4e36be7bf6358ecf2c2737fa5e
