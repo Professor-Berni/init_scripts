@@ -23,8 +23,6 @@ cd ..
 
 cd frameworks/base
 	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-19.0 && git cherry-pick 91298ce054eac35e5d89ba7d971443c9fc4b1782
-	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/60/321160/6 && git cherry-pick FETCH_HEAD
-	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/34/324734/3 && git cherry-pick FETCH_HEAD
 	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
 	git fetch "https://github.com/TARKZiM/android_frameworks_base" lineage-19.0 && git cherry-pick a01b7f3b4c98d9226ac1e054316945565df8b05e
 # Caution!
@@ -41,10 +39,6 @@ cd ../..
 cd hardware/qcom-caf/msm8994/audio/
 	git fetch "https://github.com/LineageOS/android_hardware_qcom_audio" lineage-18.1-caf-msm8916 && git cherry-pick ce771ebbc1988db8ccefb20615a8ca6295c3e93a
 cd ../../../..
-
-cd packages/apps/Settings/
-	git fetch "https://github.com/LineageOS/android_packages_apps_Settings" refs/changes/82/326382/1 && git cherry-pick FETCH_HEAD
-cd ../../..
 
 cd packages/modules/adb/
 	git fetch "https://github.com/LineageOS/android_packages_modules_adb" refs/changes/85/326385/1 && git cherry-pick FETCH_HEAD
