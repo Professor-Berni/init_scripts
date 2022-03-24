@@ -14,7 +14,7 @@ if [ -d vendor/fdroid ] ; then
 fi
 
 cd frameworks/base
-  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 14ca1204d693fdf1bfa3dfb06bb13370f718971f
+  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick a722bcce925cb86c5208beab4da7edb95c7ebe42
 cd ../..
 
 cd hardware/lineage/interfaces
