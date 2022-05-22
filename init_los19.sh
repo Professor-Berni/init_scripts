@@ -22,13 +22,17 @@ cd bionic
 cd ..
 
 cd frameworks/av
-	git fetch "https://github.com/TARKZiM/android_frameworks_av" lineage-19.1 && git cherry-pick 57a73f758a513c8fdbe379a438c635a42b779f33^..cf5d64d587531a13a09cb1ed3814c7d6e4e2a12f
+	git fetch "https://github.com/TARKZiM/android_frameworks_av" lineage-19.1 && git cherry-pick e1f0d03b51a02e8c47aab2ff2c34065c02fbdcf0^..7e0c1c30c4aad9e142d8e2d0299852d21afafa6d
 cd ../..
 
 cd frameworks/base
 	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
-	git fetch "https://github.com/TARKZiM/android_frameworks_base" lineage-19.1 && git cherry-pick 43557a700ee6782f8975a9515661be706782c9ae^..5c9c6cdba014804cafe43097f94c723388fc29a8
+	git fetch "https://github.com/TARKZiM/android_frameworks_base" lineage-19.1 && git cherry-pick 82bd67643442f9d9142da546b2f9d4249afdf9ed^..7ac28ba2921bb932bc94b2aa11fbe4ae3ee1136b
 cd ../..
+
+cd frameworks/opt/telephony
+	git fetch "https://github.com/TARKZiM/android_frameworks_opt_telephony" lineage-19.1 && git cherry-pick 99504822011a7d87c01199c4b046548bca33a8b0^..6fe481ab5120cad9434768f44aca3e7e7ac393c0
+cd ../../..
 
 cd hardware/qcom-caf/msm8994/audio/
 	git fetch "https://github.com/LineageOS/android_hardware_qcom_audio" lineage-18.1-caf-msm8916 && git cherry-pick ce771ebbc1988db8ccefb20615a8ca6295c3e93a
@@ -36,6 +40,10 @@ cd ../../../..
 
 cd packages/modules/adb/
 	git fetch "https://github.com/LineageOS/android_packages_modules_adb" refs/changes/85/326385/3 && git cherry-pick FETCH_HEAD
+cd ../../..
+
+cd packages/modules/Permission/
+	git fetch "https://github.com/TALUAtGitHub/android_packages_modules_Permission" lineage-19.1 && git cherry-pick cfa9ac0810f58002840b6090af9b5a5b4b0adf84
 cd ../../..
 
 cd packages/modules/NetworkStack
@@ -47,7 +55,8 @@ cd system/bpf
 cd ../..
 
 cd system/core
-	git fetch "https://github.com/TARKZiM/android_system_core" lineage-19.1 && git cherry-pick d4eb13ad0c6dda12307b242236d49b8db2ddb199
+	git fetch "https://github.com/TARKZiM/android_system_core" lineage-19.1 && git cherry-pick 15fe4b9e544c389d2d9b88d9396745e4f4af4f9b
+	git fetch "https://github.com/LineageOS/android_system_core" refs/changes/12/317912/2 && git cherry-pick FETCH_HEAD
 cd ../..
 
 cd system/netd
