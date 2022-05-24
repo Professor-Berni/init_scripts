@@ -66,4 +66,5 @@ cd ../..
 cd vendor/lineage
 	git fetch "https://github.com/TARKZiM/android_vendor_lineage" lineage-19.1 && git cherry-pick 80ddec1a9f6bf2368a5a391f5bd44140158f3c53
 	git revert 8f67d055b36d992f2f09aa6f733aa06ee3d5b917
+	git revert f224255cd9869d289e9d3a186a40c51d1ea8876c
 cd ../..
