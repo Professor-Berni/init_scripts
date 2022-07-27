@@ -22,7 +22,7 @@ cd bionic
 cd ..
 
 cd frameworks/base
-	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-19.1 && git cherry-pick cc938c772bd5b21fd1580640133036063eff3d03
+	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-19.1 && git cherry-pick 0c4bedcd742adfd7d3203ac7123cf9b19f1b01f5
 	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
 cd ../..
 
