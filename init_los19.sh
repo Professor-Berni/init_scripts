@@ -21,9 +21,15 @@ cd bionic
 	git fetch "https://github.com/Claymore1297/android_bionic" lineage-19.0 && git cherry-pick da090ee04042f64b96e7d15e32a80f4daf8743e6
 cd ..
 
+cd frameworks/av
+	git fetch "https://github.com/TARKZiM/android_frameworks_av" lineage-19.1 && git cherry-pick 79733533ce2a023c238cd6761d1870befb9623a0^..1220f837bce2c3e6e277967519ded8329edc6423
+cd ../..
+
 cd frameworks/base
-	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-19.1 && git cherry-pick 0c4bedcd742adfd7d3203ac7123cf9b19f1b01f5
 	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
+	git fetch "https://github.com/TARKZiM/android_frameworks_base" lineage-19.1 && git cherry-pick 543a7ee8c1879cdbdf768616c8c7a111e4e80dcb^..66f6ec99790e720d962d0c23abb43d7494e4e746
+#	git add .
+#	git commit
 cd ../..
 
 cd frameworks/opt/telephony
@@ -51,6 +57,7 @@ cd system/bpf
 cd ../..
 
 cd system/core
+	git fetch "https://github.com/TARKZiM/android_system_core" lineage-19.1 && git cherry-pick 15fe4b9e544c389d2d9b88d9396745e4f4af4f9b
 	git fetch "https://github.com/LineageOS/android_system_core" refs/changes/12/317912/2 && git cherry-pick FETCH_HEAD
 cd ../..
 
@@ -59,6 +66,7 @@ cd system/netd
 cd ../..
 
 cd vendor/lineage
+	git fetch "https://github.com/TARKZiM/android_vendor_lineage" lineage-19.1 && git cherry-pick 80ddec1a9f6bf2368a5a391f5bd44140158f3c53
 	git revert 8f67d055b36d992f2f09aa6f733aa06ee3d5b917
 	git revert f224255cd9869d289e9d3a186a40c51d1ea8876c
 cd ../..
