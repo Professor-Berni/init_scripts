@@ -28,8 +28,6 @@ cd ../..
 cd frameworks/base
 	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
 	git fetch "https://github.com/TARKZiM/android_frameworks_base" lineage-19.1 && git cherry-pick 543a7ee8c1879cdbdf768616c8c7a111e4e80dcb^..66f6ec99790e720d962d0c23abb43d7494e4e746
-#	git add .
-#	git commit
 cd ../..
 
 cd frameworks/opt/telephony
@@ -53,7 +51,7 @@ cd packages/modules/NetworkStack
 cd ../../..
 
 cd system/bpf
-	git fetch "https://github.com/LineageOS/android_system_bpf" refs/changes/91/320591/2 && git cherry-pick FETCH_HEAD
+	git fetch "https://github.com/TALUAtGitHub/android_system_bpf" android-12L && git cherry-pick 8a3b12ec0c79193abca280741d469ba26085f029^..a15ffea764407ad7a36edf10c939dc4a44b41d9b
 cd ../..
 
 cd system/core
@@ -63,6 +61,7 @@ cd ../..
 
 cd system/netd
 	git fetch "https://github.com/LineageOS/android_system_netd" refs/changes/92/320592/2 && git cherry-pick FETCH_HEAD
+	git fetch "https://github.com/TALUAtGitHub/android_system_netd" lineage-19.1 && git cherry-pick d34ea34ba94a1832608119a384610eec91cb4f37
 cd ../..
 
 cd vendor/lineage
