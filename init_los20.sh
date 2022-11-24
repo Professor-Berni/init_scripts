@@ -13,7 +13,7 @@ if [ -d vendor/fdroid ] ; then
 fi
 
 cd frameworks/base
-	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-20.0 && git cherry-pick 0754b9f43585fa83a5d25b3fac9da780dca01ca4
+	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-20.0 && git cherry-pick 9a0873d1d895e22834980878f53622151f3d03eb
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
