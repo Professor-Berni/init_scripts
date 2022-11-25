@@ -13,6 +13,12 @@ if [ -d vendor/fdroid ] ; then
   cd ../..
 fi
 
+if [ -d vendor/microG ] ; then
+  cd vendor/microG
+    ./get_packages.sh
+  cd ../..
+fi
+
 cd frameworks/base
   git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 470a49df2093fe95c83e58f73dbd0cfaee68eaed
 cd ../..
