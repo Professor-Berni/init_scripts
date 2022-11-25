@@ -12,6 +12,12 @@ if [ -d vendor/fdroid ] ; then
 	cd ../..
 fi
 
+if [ -d vendor/microG ] ; then
+  cd vendor/microG
+    ./get_packages.sh
+  cd ../..
+fi
+
 cd art
 	git fetch "https://github.com/LineageOS/android_art" refs/changes/97/318097/1 && git cherry-pick FETCH_HEAD
 cd ..
