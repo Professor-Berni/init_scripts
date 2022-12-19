@@ -4,7 +4,7 @@ rm -rf .repo/manifests
 
 repo init -u https://github.com/LineageOS-UL/android.git -b lineage-20.0
 
-repo sync -c --force-sync
+repo sync --force-sync
 
 if [ -d vendor/fdroid ] ; then
 	cd vendor/fdroid
@@ -29,7 +29,3 @@ cd ../../../..
 cd packages/services/Telecomm/
 	git fetch "https://github.com/TARKZiM/android_packages_services_Telecomm" lineage-20.0 && git cherry-pick 285e29350fd7f19086fff6c52beaccafd0852176
 cd ../../..
-
-cd vendor/lineage
-	git revert 8f67d055b36d992f2f09aa6f733aa06ee3d5b917
-cd ../..
