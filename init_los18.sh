@@ -20,7 +20,7 @@ if [ -d vendor/microG ] ; then
 fi
 
 cd frameworks/base
-  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick 470a49df2093fe95c83e58f73dbd0cfaee68eaed
+  git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-18.1 && git cherry-pick a27f890c8b5875c4255d6ba48c567379620bcaf0
 cd ../..
 
 cd packages/modules/NetworkStack
