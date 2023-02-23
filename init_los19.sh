@@ -27,7 +27,7 @@ cd hardware/qcom-caf/msm8994/audio/
 cd ../../../..
 
 cd packages/modules/Permission/
-	git fetch "https://github.com/TALUAtGitHub/android_packages_modules_Permission" lineage-19.1 && git cherry-pick fd0ecc1385bce4b3110a0fe3b41d70ef8ff2aecc
+	git fetch "https://github.com/TALUAtGitHub/android_packages_modules_Permission" lineage-19.1 && git cherry-pick 989bbf67d52c5c806e60e1b6dc4df2d6835334c5
 cd ../../..
 
 cd packages/modules/NetworkStack
