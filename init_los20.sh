@@ -19,7 +19,7 @@ if [ -d vendor/microG ] ; then
 fi
 
 cd frameworks/base
-	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-20.0 && git cherry-pick 64f103e6b5014da28b092ff6eee53caf05eb76a1
+	git fetch "https://github.com/TALUAtGitHub/android_frameworks_base" lineage-20.0 && git cherry-pick 8de39807963f20c1c3bf3ef6e09765e472e1fbfa
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
@@ -27,7 +27,7 @@ cd hardware/qcom-caf/msm8994/audio/
 cd ../../../..
 
 cd packages/modules/Permission/
-	git fetch "https://github.com/TALUAtGitHub/android_packages_modules_Permission" lineage-20.0 && git cherry-pick 3fe2531ac31eeb15fc3749b948dab640fe8aba3e
+	git fetch "https://github.com/TALUAtGitHub/android_packages_modules_Permission" lineage-20.0 && git cherry-pick e186106e85bd013a47c85b6766b30499004a785b
 cd ../../..
 
 cd packages/services/Telecomm/
