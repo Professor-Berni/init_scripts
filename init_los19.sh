@@ -18,6 +18,10 @@ if [ -d vendor/microG ] ; then
   cd ../..
 fi
 
+cd bootable/recovery
+	git revert 7c1eb300fbcf789024da690c96adb167d31aa5a5
+cd ../..
+
 cd frameworks/base
 	git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
 cd ../..
