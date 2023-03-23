@@ -3,7 +3,7 @@
 
 rm -rf .repo/manifests
 
-repo init -u https://github.com/LineageOS/android.git -b lineage-18.1
+repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 repo sync --force-sync
 
