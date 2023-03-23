@@ -2,7 +2,7 @@
 
 rm -rf .repo/manifests
 
-repo init -u https://github.com/LineageOS-UL/android.git -b lineage-20.0
+repo init -u https://github.com/LineageOS-UL/android.git -b lineage-20.0 --git-lfs
 
 repo sync --force-sync
 
