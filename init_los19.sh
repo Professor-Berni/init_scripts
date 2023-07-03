@@ -31,7 +31,7 @@ cd hardware/qcom-caf/msm8994/audio/
 cd ../../../..
 
 cd packages/modules/Permission/
-	git fetch "https://github.com/TALUAtGitHub/android_packages_modules_Permission" lineage-19.1 && git cherry-pick 989bbf67d52c5c806e60e1b6dc4df2d6835334c5
+	git fetch "https://github.com/K9100ii/android_packages_modules_Permission" lineage-19.1 && git cherry-pick 989bbf67d52c5c806e60e1b6dc4df2d6835334c5
 cd ../../..
 
 cd packages/modules/NetworkStack
@@ -39,7 +39,7 @@ cd packages/modules/NetworkStack
 cd ../../..
 
 cd system/bpf
-	git fetch "https://github.com/TALUAtGitHub/android_system_bpf" android-12L && git cherry-pick a15ffea764407ad7a36edf10c939dc4a44b41d9b
+	git fetch "https://github.com/K9100ii/android_system_bpf" android-12L && git cherry-pick a15ffea764407ad7a36edf10c939dc4a44b41d9b
 cd ../..
 
 cd system/core
@@ -47,7 +47,7 @@ cd system/core
 cd ../..
 
 cd system/netd
-	git fetch "https://github.com/TALUAtGitHub/android_system_netd" lineage-19.1 && git cherry-pick d34ea34ba94a1832608119a384610eec91cb4f37
+	git fetch "https://github.com/K9100ii/android_system_netd" lineage-19.1 && git cherry-pick d34ea34ba94a1832608119a384610eec91cb4f37
 cd ../..
 
 cd vendor/lineage
