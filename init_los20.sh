@@ -19,7 +19,7 @@ if [ -d vendor/microG ] ; then
 fi
 
 cd frameworks/base
-	git fetch "https://github.com/K9100ii/android_frameworks_base" lineage-20.0 && git cherry-pick 6f5861ecd120cafc38696266f77b2e3e3ba25e7d
+	git fetch "https://github.com/K9100ii/android_frameworks_base" lineage-20.0 && git cherry-pick 5ef5873ea6b2e5ca7357542490c9bfe180a6264b
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
