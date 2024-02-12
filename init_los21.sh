@@ -27,7 +27,7 @@ fi
 if [ -d vendor/fdroid ] ; then
   cd vendor/fdroid
     ./get_packages.sh
-	cd ../..
+  cd ../..
 fi
 
 if [ -d vendor/microG ] ; then
@@ -37,6 +37,5 @@ if [ -d vendor/microG ] ; then
 fi
 
 cd frameworks/base
-	git fetch "https://github.com/K9100ii/android_frameworks_base" lineage-21.0 && git cherry-pick a17792870dce4aa0af9a5ec6a9c130bf5e078de2
+  git fetch "https://github.com/K9100ii/android_frameworks_base" lineage-21.0 && git cherry-pick a17792870dce4aa0af9a5ec6a9c130bf5e078de2
 cd ../..
-
