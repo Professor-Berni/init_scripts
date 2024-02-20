@@ -31,7 +31,7 @@ cd hardware/qcom-caf/msm8994/audio/
 cd ../../../..
 
 cd packages/modules/Permission/
-	git fetch "https://github.com/K9100ii/android_packages_modules_Permission" lineage-19.1 && git cherry-pick db588a00a9914842d4239bd1d9d0b3d693e2aad9
+	git fetch "https://github.com/K9100ii/android_packages_modules_Permission" lineage-19.1 && git cherry-pick f07fcd68f11d2fbc26763985e3775f89fc7533ea
 cd ../../..
 
 cd packages/modules/NetworkStack
