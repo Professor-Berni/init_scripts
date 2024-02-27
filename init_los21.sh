@@ -35,7 +35,3 @@ if [ -d vendor/microG ] ; then
     ./get_packages.sh
   cd ../..
 fi
-
-cd frameworks/base
-  git fetch "https://github.com/K9100ii/android_frameworks_base" lineage-21.0 && git cherry-pick a17792870dce4aa0af9a5ec6a9c130bf5e078de2
-cd ../..
