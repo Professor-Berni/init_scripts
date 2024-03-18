@@ -40,10 +40,6 @@ cd hardware/qcom-caf/msm8994/audio/
   git fetch "https://github.com/LineageOS/android_hardware_qcom_audio" lineage-18.1-caf-msm8916 && git cherry-pick ce771ebbc1988db8ccefb20615a8ca6295c3e93a
 cd ../../../..
 
-cd packages/providers/DownloadProvider
-  git revert a16ad15fffeb309037bd964b61b3c5e4a8251298
-cd ../../..
-
 cd vendor/qcom/opensource/vibrator/
   git revert 61cfb7a5d55f6183d9d583bb30712e48d45b12c9
 cd ../../../..
