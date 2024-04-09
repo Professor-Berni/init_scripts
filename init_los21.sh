@@ -41,5 +41,5 @@ cd device/lineage/sepolicy
 cd ../../..
 
 cd system/sepolicy
-  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick ca6ecbf2127062924476ac06d8df96cecdde68a6
+  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick c9d3ca9086a7cefce136a53cb29e3109415f9180^..653f4b8e1fe8d73123e60a612f58ec3c64a7d7fd
 cd ../..
