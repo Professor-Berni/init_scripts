@@ -40,10 +40,6 @@ cd device/lineage/sepolicy
   git fetch "https://github.com/Professor-Berni/android_device_lineage_sepolicy" lineage-21.0 && git cherry-pick 105b3b4a3f3206ccce3b4ccf6aa999aa5612866f^..008ccd26ffb966fccdf544355ba5f3a323acbbe3
 cd ../../..
 
-cd hardware/qcom-caf/msm8994/display
-  git fetch "https://github.com/Professor-Berni/android_hardware_qcom_display" lineage-21.0-caf-msm8994 && git cherry-pick 8f7eb2d463d2fbb0af6e3031d63267b9d108b09e
-cd ../../../..
-
 cd system/sepolicy
-  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 4ee184efe03fc779c6d5f4cf65969e57ae7bdd62^..05676bb37af546e769e7e15df33c45df92de0f58
+  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 2b44a13c752da9806c10267f72f560236c6310e2^..e7a355abb79a0f15f6da8c67f22930b2ad0d1204
 cd ../..
