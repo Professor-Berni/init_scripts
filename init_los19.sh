@@ -7,9 +7,9 @@ repo init -u https://github.com/LineageOS-UL/android.git -b lineage-19.1 --git-l
 repo sync --force-sync
 
 if [ -d vendor/fdroid ] ; then
-	cd vendor/fdroid
-		./get_packages.sh
-	cd ../..
+  cd vendor/fdroid
+    ./get_packages.sh
+  cd ../..
 fi
 
 if [ -d vendor/microG ] ; then
@@ -22,8 +22,13 @@ cd bootable/recovery
   git revert 7c1eb300fbcf789024da690c96adb167d31aa5a5
 cd ../..
 
+cd frameworks/av
+  git fetch "https://github.com/LineageOS/android_frameworks_av" lineage-19.1 && git cherry-pick 192b10501d328aacddf2a2e109f59d79310b5bfd
+cd ../..
+
 cd frameworks/base
   git fetch "https://github.com/LineageOS/android_frameworks_base" refs/changes/92/326692/1 && git cherry-pick FETCH_HEAD
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick 83a8b98a3d0281c763bc288dc9dc7ae8ae3dd0a7^..1c3880c82cd574b577770910ea42a36e4ee5c596
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
