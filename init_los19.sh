@@ -23,7 +23,7 @@ cd bootable/recovery
 cd ../..
 
 cd frameworks/av
-  git fetch "https://github.com/LineageOS/android_frameworks_av" lineage-19.1 && git cherry-pick 192b10501d328aacddf2a2e109f59d79310b5bfd
+  git fetch "https://github.com/Professor-Berni/android_frameworks_av" lineage-19.1 && git cherry-pick b64c8b1c1b37e19fe31786b436c571d735aa5f76^..2b40ffe62f9daaa5ad1e284a7908da1f3996baa6
 cd ../..
 
 cd frameworks/base
