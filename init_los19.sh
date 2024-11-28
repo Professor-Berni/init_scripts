@@ -28,6 +28,7 @@ cd ../..
 
 cd frameworks/base
   git fetch "https://github.com/Professor-Berni/android_frameworks_base" lineage-19.1 && git cherry-pick e78129f0f145bc883aec9bf5f30a4ad02c7298cb^..f37c99b92e059c3907cc157b2445a7eea347910b
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick 0ae6d568dabe36c3d303849aee50ce01f58eea11^..f561c822ac3f3ad7f8b5c00447f4238e99497ece
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
