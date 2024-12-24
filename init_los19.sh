@@ -1,6 +1,20 @@
 #!/bin/bash
 
-rm -rf .repo/manifests
+if [ -d .repo/manifests ] ; then
+  rm -rf .repo/manifests
+fi
+
+if [ -d .repo/repo ] ; then
+  rm -rf .repo/repo
+fi
+
+if [ -d .repo/projects/frameworks/base.git ] ; then
+  rm -rf .repo/projects/frameworks/base.git
+fi
+
+if [ -d frameworks/base ] ; then
+  rm -rf frameworks/base
+fi
 
 repo init -u https://github.com/LineageOS-UL/android.git -b lineage-19.1 --git-lfs
 
@@ -28,7 +42,8 @@ cd ../..
 
 cd frameworks/base
   git fetch "https://github.com/Professor-Berni/android_frameworks_base" lineage-19.1 && git cherry-pick e78129f0f145bc883aec9bf5f30a4ad02c7298cb^..f37c99b92e059c3907cc157b2445a7eea347910b
-  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick 0ae6d568dabe36c3d303849aee50ce01f58eea11^..f561c822ac3f3ad7f8b5c00447f4238e99497ece
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick 0ae6d568dabe36c3d303849aee50ce01f58eea11^..74e3943cad42aa290e0e1bca593b0e9a356b72b3
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick -m 1 56a3588d8b2c7002093fadd0cc80da7032203662
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
