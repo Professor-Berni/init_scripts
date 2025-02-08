@@ -8,7 +8,7 @@ if [ -d .repo/repo ] ; then
   rm -rf .repo/repo
 fi
 
-repo init -u https://github.com/LineageOS-UL/android.git -b lineage-21.0 --git-lfs
+repo init -u https://github.com/Professor-Berni/android.git -b lineage-21.0 --git-lfs
 
 repo sync --force-sync
 
@@ -37,9 +37,9 @@ if [ -d vendor/microG ] ; then
 fi
 
 cd device/lineage/sepolicy
-  git fetch "https://github.com/Professor-Berni/android_device_lineage_sepolicy" lineage-21.0 && git cherry-pick 105b3b4a3f3206ccce3b4ccf6aa999aa5612866f^..008ccd26ffb966fccdf544355ba5f3a323acbbe3
+  git fetch "https://github.com/Professor-Berni/android_device_lineage_sepolicy" lineage-21.0 && git cherry-pick 8b80ef55573d308da4a4254b3764557b6d6decc1^..a03262e910d3ede716fd2091a7b33cc5be87bb60
 cd ../../..
 
 cd system/sepolicy
-  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 2b44a13c752da9806c10267f72f560236c6310e2^..e7a355abb79a0f15f6da8c67f22930b2ad0d1204
+  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 974da58cc64c99be80d102124f9b37c58b1967eb^..2ba145fc84cf8ad49ed5e89876f4de050576cd99
 cd ../..
