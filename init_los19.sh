@@ -87,8 +87,3 @@ cd ../..
 cd system/netd
   git fetch "https://github.com/K9100ii/android_system_netd" lineage-19.1 && git cherry-pick 1f89ad475f265d2f461498cd73b36eacf2915e24
 cd ../..
-
-cd vendor/lineage
-  git revert 8f67d055b36d992f2f09aa6f733aa06ee3d5b917
-  git revert f224255cd9869d289e9d3a186a40c51d1ea8876c
-cd ../..
