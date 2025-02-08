@@ -16,9 +16,21 @@ if [ -d frameworks/base ] ; then
   rm -rf frameworks/base
 fi
 
-repo init -u https://github.com/LineageOS-UL/android.git -b lineage-19.1 --git-lfs
+repo init -u https://github.com/Professor-Berni/android.git -b lineage-19.1 --git-lfs
 
 repo sync --force-sync
+
+# *******************
+# * Error handling: *
+# *******************
+
+status=$?
+if [ $status -eq 1 ]; then
+  echo "$(tput setaf 1)############################################$(tput setaf 0)"
+  echo "$(tput setaf 1)# An error occurred during initialization! #$(tput setaf 0)"
+  echo "$(tput setaf 1)############################################$(tput setaf 0)"
+  exit
+fi
 
 if [ -d vendor/fdroid ] ; then
   cd vendor/fdroid
@@ -44,6 +56,12 @@ cd frameworks/base
   git fetch "https://github.com/Professor-Berni/android_frameworks_base" lineage-19.1 && git cherry-pick e78129f0f145bc883aec9bf5f30a4ad02c7298cb^..f37c99b92e059c3907cc157b2445a7eea347910b
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick 0ae6d568dabe36c3d303849aee50ce01f58eea11^..74e3943cad42aa290e0e1bca593b0e9a356b72b3
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick -m 1 56a3588d8b2c7002093fadd0cc80da7032203662
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick -m 1 49397cc9b48c2fa9f0390743228a1c4017129408
+cd ../..
+
+cd frameworks/native
+  git fetch "https://github.com/LineageOS/android_frameworks_native" lineage-19.1 && git cherry-pick e6ebb7ee33f1edac3d5254a77b163dbb3f3d207c^..b0d718631a8b82ccf3c21f9c63c91163ed79d0be
+  git fetch "https://github.com/LineageOS/android_frameworks_native" lineage-19.1 && git cherry-pick -m 1 a94051aab5ca653f380d9ea309d37e15ed01c922
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
