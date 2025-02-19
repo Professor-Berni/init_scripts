@@ -57,6 +57,7 @@ cd frameworks/base
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick 0ae6d568dabe36c3d303849aee50ce01f58eea11^..74e3943cad42aa290e0e1bca593b0e9a356b72b3
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick -m 1 56a3588d8b2c7002093fadd0cc80da7032203662
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick -m 1 49397cc9b48c2fa9f0390743228a1c4017129408
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1 && git cherry-pick -m 1 d302ec78aaf1e9c448ff23e0b0535c5ff8aaddb2
 cd ../..
 
 cd frameworks/native
