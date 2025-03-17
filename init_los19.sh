@@ -70,10 +70,6 @@ cd hardware/qcom-caf/msm8994/audio/
   git fetch "https://github.com/LineageOS/android_hardware_qcom_audio" lineage-18.1-caf-msm8916 && git cherry-pick ce771ebbc1988db8ccefb20615a8ca6295c3e93a
 cd ../../../..
 
-cd packages/modules/Permission/
-  git fetch "https://github.com/K9100ii/android_packages_modules_Permission" lineage-19.1 && git cherry-pick f07fcd68f11d2fbc26763985e3775f89fc7533ea
-cd ../../..
-
 cd packages/modules/NetworkStack
   git fetch "https://github.com/DerpFest-11/packages_modules_NetworkStack" 11 && git cherry-pick 22fd53a977eeaf4e36be7bf6358ecf2c2737fa5e
 cd ../../..
