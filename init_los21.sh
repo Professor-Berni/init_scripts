@@ -37,7 +37,7 @@ if [ -d vendor/microG ] ; then
 fi
 
 cd device/lineage/sepolicy
-  git fetch "https://github.com/Professor-Berni/android_device_lineage_sepolicy" lineage-21.0 && git cherry-pick 8b80ef55573d308da4a4254b3764557b6d6decc1^..a03262e910d3ede716fd2091a7b33cc5be87bb60
+  git fetch "https://github.com/Professor-Berni/android_device_lineage_sepolicy" lineage-21.0 && git cherry-pick 8b80ef55573d308da4a4254b3764557b6d6decc1^..990fc85267829576204725f1e63fcd7380de3be7
 cd ../../..
 
 cd system/sepolicy
