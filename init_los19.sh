@@ -73,17 +73,7 @@ cd packages/modules/NetworkStack
   git cherry-pick 22fd53a977eeaf4e36be7bf6358ecf2c2737fa5e
 cd ../../..
 
-cd system/bpf
-  git fetch "https://github.com/K9100ii/android_system_bpf" android-12L
-  git cherry-pick a15ffea764407ad7a36edf10c939dc4a44b41d9b
-cd ../..
-
 cd system/core
   git fetch "https://github.com/LineageOS/android_system_core" refs/changes/12/317912/2
   git cherry-pick FETCH_HEAD
-cd ../..
-
-cd system/netd
-  git fetch "https://github.com/K9100ii/android_system_netd" lineage-19.1
-  git cherry-pick 1f89ad475f265d2f461498cd73b36eacf2915e24
 cd ../..
