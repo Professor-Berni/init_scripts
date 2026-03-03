@@ -43,6 +43,8 @@ cd ../..
 cd frameworks/av
   git fetch "https://github.com/Professor-Berni/android_frameworks_av" lineage-19.1
   git cherry-pick 2b40ffe62f9daaa5ad1e284a7908da1f3996baa6
+  git fetch "https://github.com/LineageOS/android_frameworks_av" lineage-19.1
+  git cherry-pick 8bccf4452670e1ffc87ff1b70e7072df524fd6ee^..ea6f8806bae9b21dc7020a5c7afbe6c1c0068718
 cd ../..
 
 cd frameworks/base
@@ -51,11 +53,15 @@ cd frameworks/base
   git cherry-pick 74ec630807aa4fdea303fd54be758d4ec1d613a8
   git cherry-pick 7ebf7038ed1daf92890202e031c50924798e2c6f
   git cherry-pick f37c99b92e059c3907cc157b2445a7eea347910b
+  git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1
+  git cherry-pick 183b430394036f1dafed463c88885d8f2a9d1aa9^..46f39fc095c4d33e05deaf22e13d738bbe22f03c
 cd ../..
 
 cd frameworks/native
   git fetch "https://github.com/Professor-Berni/android_frameworks_native" lineage-19.1
   git cherry-pick e96ff91b4eb3b381088c791f031192b3950249dd
+  git fetch "https://github.com/LineageOS/android_frameworks_native" lineage-19.1
+  git cherry-pick 7b63168f9b59ba4c9275f4bd925362af61cbb0b9^..d9857e0f72893dd063538c0d1359db7054550576
 cd ../..
 
 cd hardware/qcom-caf/msm8994/audio/
