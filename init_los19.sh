@@ -54,15 +54,20 @@ cd frameworks/base
   git cherry-pick 7ebf7038ed1daf92890202e031c50924798e2c6f
   git cherry-pick f37c99b92e059c3907cc157b2445a7eea347910b
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1
-  git cherry-pick 183b430394036f1dafed463c88885d8f2a9d1aa9^..46f39fc095c4d33e05deaf22e13d738bbe22f03c
+  git cherry-pick 183b430394036f1dafed463c88885d8f2a9d1aa9^..bdcf2f3fd134152c2a9c4c32c3b26b4ffb8e4646
 cd ../..
 
 cd frameworks/native
   git fetch "https://github.com/Professor-Berni/android_frameworks_native" lineage-19.1
   git cherry-pick e96ff91b4eb3b381088c791f031192b3950249dd
   git fetch "https://github.com/LineageOS/android_frameworks_native" lineage-19.1
-  git cherry-pick 7b63168f9b59ba4c9275f4bd925362af61cbb0b9^..d9857e0f72893dd063538c0d1359db7054550576
+  git cherry-pick 7b63168f9b59ba4c9275f4bd925362af61cbb0b9^..1a4d6ce743074b1aa13e8bb951f6d5524f3fd30a
 cd ../..
+
+cd frameworks/opt/telephony
+  git fetch "https://github.com/LineageOS/android_frameworks_opt_telephony" lineage-19.1
+  git cherry-pick c55c8b50c26468223c4ada7e41bcc593bfd2e0c6^..5a6fad640313aff8b493a39467fe0d44c809dfc7
+cd ../../..
 
 cd hardware/qcom-caf/msm8994/audio/
   git fetch "https://github.com/LineageOS/android_hardware_qcom_audio" lineage-18.1-caf-msm8916
