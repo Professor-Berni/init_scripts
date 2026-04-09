@@ -44,7 +44,7 @@ cd frameworks/av
   git fetch "https://github.com/Professor-Berni/android_frameworks_av" lineage-19.1
   git cherry-pick 2b40ffe62f9daaa5ad1e284a7908da1f3996baa6
   git fetch "https://github.com/LineageOS/android_frameworks_av" lineage-19.1
-  git cherry-pick 8bccf4452670e1ffc87ff1b70e7072df524fd6ee^..ea6f8806bae9b21dc7020a5c7afbe6c1c0068718
+  git cherry-pick 8bccf4452670e1ffc87ff1b70e7072df524fd6ee^..8ad4e1d710fab315ff7ce461eed1efa60f282828
 cd ../..
 
 cd frameworks/base
@@ -54,14 +54,14 @@ cd frameworks/base
   git cherry-pick 7ebf7038ed1daf92890202e031c50924798e2c6f
   git cherry-pick f37c99b92e059c3907cc157b2445a7eea347910b
   git fetch "https://github.com/LineageOS/android_frameworks_base" lineage-19.1
-  git cherry-pick 183b430394036f1dafed463c88885d8f2a9d1aa9^..bdcf2f3fd134152c2a9c4c32c3b26b4ffb8e4646
+  git cherry-pick 183b430394036f1dafed463c88885d8f2a9d1aa9^..431abc4459e3c036527dcba1b78b62d07076e09c
 cd ../..
 
 cd frameworks/native
   git fetch "https://github.com/Professor-Berni/android_frameworks_native" lineage-19.1
   git cherry-pick e96ff91b4eb3b381088c791f031192b3950249dd
   git fetch "https://github.com/LineageOS/android_frameworks_native" lineage-19.1
-  git cherry-pick 7b63168f9b59ba4c9275f4bd925362af61cbb0b9^..1a4d6ce743074b1aa13e8bb951f6d5524f3fd30a
+  git cherry-pick 7b63168f9b59ba4c9275f4bd925362af61cbb0b9^..dd003a4c6dcda68b6fe1a399bd8c47df9e9951bb
 cd ../..
 
 cd frameworks/opt/telephony
