@@ -80,7 +80,7 @@ cd hardware/ril/
 cd ../..
 
 cd packages/modules/NetworkStack
-  git fetch "https://github.com/DerpFest-11/packages_modules_NetworkStack" 11
+  git fetch "https://github.com/Professor-Berni/packages_modules_NetworkStack" 11
   git cherry-pick 22fd53a977eeaf4e36be7bf6358ecf2c2737fa5e
 cd ../../..
 
