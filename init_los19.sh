@@ -50,6 +50,11 @@ cd hardware/ril/
   git cherry-pick 770260ee50f46af320ea04621c469f9d974a2920
 cd ../..
 
+cd packages/modules/adb
+  git fetch "https://github.com/LineageOS/android_packages_modules_adb" lineage-19.1
+  git cherry-pick ff1aa1f2309bcd12750fb4838ea4ca25fe644042
+cd ../../..
+
 cd packages/modules/NetworkStack
   git fetch "https://github.com/Professor-Berni/packages_modules_NetworkStack" 11
   git cherry-pick 22fd53a977eeaf4e36be7bf6358ecf2c2737fa5e
