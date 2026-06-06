@@ -1,12 +1,10 @@
 #!/bin/bash
 
-if [ -d .repo/manifests ] ; then
-  rm -rf .repo/manifests
-fi
+current_dir=$(pwd)
 
-if [ -d .repo/repo ] ; then
-  rm -rf .repo/repo
-fi
+if [ -d .repo/manifests ]; then rm -rf .repo/manifests; fi
+
+if [ -d .repo/repo ]; then rm -rf .repo/repo; fi
 
 repo init -u https://github.com/Professor-Berni/android.git -b lineage-21.0 --git-lfs
 
@@ -27,19 +25,23 @@ fi
 if [ -d vendor/fdroid ] ; then
   cd vendor/fdroid
     ./get_packages.sh
-  cd ../..
+  cd $current_dir
 fi
 
 if [ -d vendor/microG ] ; then
   cd vendor/microG
     ./get_packages.sh
-  cd ../..
+  cd $current_dir
 fi
 
 cd device/lineage/sepolicy
   git fetch "https://github.com/Professor-Berni/android_device_lineage_sepolicy" lineage-21.0 && git cherry-pick 8b80ef55573d308da4a4254b3764557b6d6decc1^..990fc85267829576204725f1e63fcd7380de3be7
-cd ../../..
+cd $current_dir
+
+cd hardware/ril/
+  git fetch "https://github.com/Professor-Berni/android_device_sony_kitakami-common" lineage-21.0 && git cherry-pick 770260ee50f46af320ea04621c469f9d974a2920
+cd $current_dir
 
 cd system/sepolicy
   git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 974da58cc64c99be80d102124f9b37c58b1967eb^..2ba145fc84cf8ad49ed5e89876f4de050576cd99
-cd ../..
+cd $current_dir
