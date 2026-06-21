@@ -42,6 +42,11 @@ cd bootable/recovery
   git revert 7c1eb300fbcf789024da690c96adb167d31aa5a5
 cd $current_dir
 
+cd build/soong
+  git fetch "https://github.com/Professor-Berni/android_build_soong" lineage-19.1
+  git cherry-pick 469847c02d3c847d861a3debb4bb1e3b09923077
+cd $current_dir
+
 cd hardware/qcom-caf/msm8994/audio/
   git fetch "https://github.com/LineageOS/android_hardware_qcom_audio" lineage-18.1-caf-msm8916
   git cherry-pick ce771ebbc1988db8ccefb20615a8ca6295c3e93a
