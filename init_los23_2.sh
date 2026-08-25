@@ -41,7 +41,3 @@ cd $current_dir
 cd hardware/ril
   git fetch "https://github.com/Professor-Berni/android_device_sony_kitakami-common" lineage-21.0 && git cherry-pick 770260ee50f46af320ea04621c469f9d974a2920
 cd $current_dir
-
-cd vendor/lineage/
-  git fetch "https://github.com/Professor-Berni/android_vendor_lineage" lineage-23.2 && git cherry-pick 40b86dbda0b6095de7c3ec6b0b17d29ae1c8287f
-cd $current_dir
