@@ -45,3 +45,7 @@ cd $current_dir
 cd system/sepolicy
   git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-23.2 && git cherry-pick 5818a2faf1cdf85cd5802dee354795cd0c795001
 cd $current_dir
+
+cd vendor/lineage/
+  git fetch "https://github.com/Professor-Berni/android_vendor_lineage" lineage-23.2 && git cherry-pick 40b86dbda0b6095de7c3ec6b0b17d29ae1c8287f
+cd $current_dir
