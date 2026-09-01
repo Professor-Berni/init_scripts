@@ -34,10 +34,6 @@ if [ -d vendor/microG ] ; then
   cd $current_dir
 fi
 
-cd build/make
-  git fetch "https://github.com/LineageOS-23-2-Z5P/android_build" lineage-23.2 && git cherry-pick 33da797c5a56becfa9f90119abc8ee349b139078
-cd $current_dir
-
 cd hardware/ril
   git fetch "https://github.com/Professor-Berni/android_device_sony_kitakami-common" lineage-21.0 && git cherry-pick 770260ee50f46af320ea04621c469f9d974a2920
 cd $current_dir
