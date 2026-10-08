@@ -43,5 +43,5 @@ cd hardware/ril/
 cd $current_dir
 
 cd system/sepolicy
-  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 974da58cc64c99be80d102124f9b37c58b1967eb^..2ba145fc84cf8ad49ed5e89876f4de050576cd99
+  git fetch "https://github.com/Professor-Berni/android_system_sepolicy" lineage-21.0 && git cherry-pick 974da58cc64c99be80d102124f9b37c58b1967eb^..ca5781e693678f74b74a643f6d2d27957b542f5b
 cd $current_dir
